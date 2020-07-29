@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ubuntu, arial;
+    overflow-X: hidden;
+}
+
+.gallery {
+    min-height: 100vh;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 2%;
+    width: 30%;
+    left: 0%;
+
+}
+
+.gallery h1 {
+    font-size: 60px;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.images {
+    position: absolute;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    top: 5%;
+    right: 5%;
+    height: 90%;
+    width: 60%;
+    background-color: darkcyan
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.gallery a {
+    position: relative;
+    overflow: hidden;
+    flex-basis: calc(50% - 40px);
+    margin: 0 20px;
+    background-color: black;
+    height: 20%;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 3px 3px gray;
+}

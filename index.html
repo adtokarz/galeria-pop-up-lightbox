@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="dist/css/lightbox.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="gallery">
+        <div class="title">
+            <h1>Galeria</h1>
+
+        </div>
+        <div class="images">
+            <a data-lightbox="obrazek" data-title="Obrazek" href="img/1.jpg">
+                <img src="img/thumb1.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/2.jpg">
+                <img src="img/thumb2.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/3.jpg">
+                <img src="img/thumb3.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/4.jpg">
+                <img src="img/thumb4.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/5.jpg">
+                <img src="img/thumb5.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/6.jpg">
+                <img src="img/thumb6.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/7.jpg">
+                <img src="img/thumb7.jpg">
+            </a>
+            <a data-lightbox="obrazek" href="img/8.jpg">
+                <img src="img/thumb8.jpg">
+            </a>
+        </div>
+    </section>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'albumLabel': "Zdjecie %1 z %2"
+        })
+    </script>
+</body>
+
+</html>
